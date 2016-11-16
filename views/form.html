@@ -1,0 +1,53 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<h3>Add a User With Interests</h3>
+<hr>
+<form method="POST" action="/">
+
+    <!-- <div>PLACEHOLDER FOR AUTHOR NAME FIELD</div> -->
+<div class="form-group">
+    <label for="streetAddress" class="col-sm-2 control-label">Street Address</label>
+<div class="col-sm-10">
+    <input name="streetAddress" type="text" class="form-control"/>
+    </div>
+    </div>
+
+    <!--  <div>PLACEHOLDER FOR AUTHOR EMAIL FIELD</div> -->
+<div class="form-group">
+    <label for="city" class="col-sm-2 control-label">City</label>
+    <div class="col-sm-10">
+    <input name="city" type="text" class="form-control"/>
+    </div>
+    </div>
+
+
+    <div class="form-group">
+    <label for="state" class="col-sm-2 control-label">State</label>
+<div class="col-sm-10">
+    <input name="state" type="text" class="form-control"/>
+    </div>
+    </div>
+
+    <!-- <div>PLACEHOLDER FOR PAGE CONTENT TEXTAREA FIELD</div> -->
+<div class="form-group">
+    <label for="zip" class="col-sm-2 control-label">Zip Code</label>
+    <div class="col-sm-10">
+    <input name="zip" type="text" class="form-control"/>
+    </div>
+    </div>
+
+    <!-- <div>PLACEHOLDER FOR PAGE STATUS INPUT FIELD</div> -->
+<div class="form-group">
+    <label for="phone" class="col-sm-2 control-label">Phone Number</label>
+    <div class="col-sm-10">
+    <input name="phone" type="text" class="form-control"/>
+    </div>
+    </div>
+
+    <div class="col-sm-offset-2 col-sm-10">
+    <button type="submit" class="btn btn-primary">submit</button>
+    </div>
+
+    </form>
+    {% endblock %}
